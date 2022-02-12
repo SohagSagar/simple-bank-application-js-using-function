@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="lg:w-3/4 sm:w-3/4 mx-auto">
     <h1 class="lg:text-5xl md:text-4xl sm:text-3xl mt-16 mb-8 text-center font-semibold  ">Welcome to <span class="text-lime-600">Dashboard</span></h1>
     <section class="lg:w-3/4 mx-auto">
             
-        <p hidden id="alart" class="bg-red-100 border-l-4 border-1 rounded-lg border-red-500 text-red-500 p-3 mb-4">Insufficient Balance!!</p>
+        <p id="depositAlart" class="bg-green-100 border-l-4 border-1 rounded-lg border-green-500 text-green-500 p-3 mb-4 ">Deposit Successfully!!</p>
+
+        <p hidden id="withdrawAlart" class="bg-green-100 border-l-4 border-1 rounded-lg border-green-500 text-green-500 p-3 mb-4">Withdraw Successfully!!</p>
+        
+        <p hidden id="errorAlart" class="bg-red-100 border-l-4 border-1 rounded-lg border-red-500 text-red-500 p-3 mb-4">Insufficient Balance!!</p>
         
         <section>
             <div class="grid grid-cols-3 gap-4 ">
