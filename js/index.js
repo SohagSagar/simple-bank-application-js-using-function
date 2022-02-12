@@ -36,9 +36,8 @@ function withdawBtn(){
         
         var totalWithdraw=getMoney(currentWithdraw.innerText,withdawAmount.value,true);
         var totalBalance=getMoney(currentBalance.innerText,withdawAmount.value,false);
-        
-        if(totalBalance<0){
-            currentBalance.innerText=0;
+        // debugger;
+        if((totalBalance<0 && totalBalance<totalWithdraw)){
             document.getElementById('alart').removeAttribute('hidden');
         }
         else{
